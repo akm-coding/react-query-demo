@@ -1,42 +1,129 @@
-#root {
-  max-width: 1280px;
+/* Reset some default styles */
+html,
+body,
+div,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set up a background color and font */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7fafc;
+}
+
+/* Container for the entire app */
+.container {
+  max-width: 800px;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  padding: 20px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Header styles */
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Item card styles */
+.item-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 0.5rem;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.item-card h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
 }
 
-.card {
-  padding: 2em;
+.item-card p {
+  font-size: 1rem;
+  color: #4a5568;
 }
 
-.read-the-docs {
-  color: #888;
+/* Button styles */
+.button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.button-primary {
+  background-color: #4c51bf;
+  color: #ffffff;
+}
+
+.button-primary:hover {
+  background-color: #4338ca;
+}
+
+.button-danger {
+  background-color: #e53e3e;
+  color: #ffffff;
+}
+
+.button-danger:hover {
+  background-color: #c53030;
+}
+
+/* Form styles */
+.form {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.form input[type="text"] {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #cbd5e0;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Create button styles */
+.create-button {
+  background-color: #48bb78;
+  color: #ffffff;
+}
+
+.create-button:hover {
+  background-color: #38a169;
+}
+
+/* Update button styles */
+.update-button {
+  background-color: #4299e1;
+  color: #ffffff;
+}
+
+.update-button:hover {
+  background-color: #3182ce;
 }
